@@ -1,4 +1,7 @@
-// Step 1: Adding an image changer
+/* Ana Arzola 
+INF651 Front End Web Development I
+Aug 19, 2020
+Step 1: Adding an image changer*/
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
