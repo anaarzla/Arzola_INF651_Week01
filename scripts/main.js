@@ -1,4 +1,4 @@
-// Step 1 
+// Step 1: Adding an image changer
 let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
@@ -9,11 +9,11 @@ myImage.onclick = function() {
       myImage.setAttribute('src','images/firefox-icon.png');
     }
 }
-// Step 2 
+// Step 2: Adding a personalized welcome message
 let myButton = document.querySelector('button');
 let myHeading = document.querySelector('h1');
 
-// dsfsf
+// checks to make sure user has entered name
 function setUserName() {
     let myName = prompt('Please enter your name.');
     if(!myName) {
@@ -24,7 +24,7 @@ function setUserName() {
     }
   }
 
-//sadada
+//if... else
 if(!localStorage.getItem('name')) {
     setUserName();
   } else {
@@ -32,7 +32,7 @@ if(!localStorage.getItem('name')) {
     myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
   }
 
-//xdfsf
+//onclick event handler 
 myButton.onclick = function() {
     setUserName();
   }
